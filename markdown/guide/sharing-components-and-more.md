@@ -15,7 +15,7 @@ In order to use things like Components and Helpers from addons in your Engine, t
 export { default } from 'super-addon/components/foo-bar';
 ```
 
-As you can see we're simply exporting the import from `super-addon`. Since we're exporting an export, we call it re-exporting.
+As you can see we're simply exporting the import from `super-addon`. Since we're exporting an import, we call it re-exporting.
 
 As you can imagine, doing this for everything in the addons you need to use could be very tedious. So `ember-engines` provides a simple way to automatically re-export everything an addon usually provides to an application: the `EngineAddon` base class.
 
